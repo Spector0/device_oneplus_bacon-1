@@ -10,3 +10,5 @@ allow mediaserver sensorservice_service:service_manager find;
 allow mediaserver system_server:unix_stream_socket { read write };
 
 binder_call(mediaserver, audiod)
+# For text relocations in /system/vendor/lib/libmmjpeg.so
+allow mediaserver system_file:file execmod;
