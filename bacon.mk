@@ -153,6 +153,11 @@ PRODUCT_PROPERTY_OVERRIDES += \
 PRODUCT_COPY_FILES += \
     $(LOCAL_PATH)/configs/sec_config:system/etc/sec_config
 
+# Keyhandler
+PRODUCT_PACKAGES += \
+    CMActions \
+    com.cyanogenmod.keyhandler
+
 # Keystore
 PRODUCT_PACKAGES += \
     keystore.msm8974
