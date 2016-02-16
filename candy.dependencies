@@ -3,7 +3,7 @@
     "remote": "github",
     "repository": "CandyDevices/device_oppo_common",
     "target_path": "device/oppo/common",
-    "branch": "c6
+    "branch": "c6"
   },
   {
     "remote": "github",
@@ -13,19 +13,13 @@
   },
   {
     "remote": "github",
-    "repository": "sultanxda/vendor_oneplus",
+    "repository": "NoSpamDan/vendor_oneplus",
     "target_path": "vendor/oneplus",
-    "branch": "cm-13.0-caf"
-  },
+    "branch": "m6.0"
+  }
   {
     "remote": "github",
-    "repository": "sultanxda/android_packages_apps_SnapdragonCamera",
-    "target_path": "packages/apps/SnapdragonCamera",
-    "branch": "cm-13.0-caf"
-  },
-  {
-    "remote": "github",
-    "repository": "sultanxda/android_external_sony_boringssl-compat",
+    "repository": "NoSpamDan/android_external_sony_boringssl-compat",
     "target_path": "external/sony/boringssl-compat",
     "branch": "cm-13.0"
   },
