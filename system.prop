@@ -11,6 +11,8 @@ ro.qualcomm.cabl=0
 
 # Camera
 camera2.portability.force_api=1
+media.stagefright.legacyencoder=true
+media.stagefright.less-secure=true
 
 # Display
 ro.sf.lcd_density=420
@@ -38,7 +40,6 @@ audio.deep_buffer.media=true
 
 mm.enable.smoothstreaming=true
 persist.media.treble_omx=false
-camera.disable_treble=true
 media.aac_51_output_enabled=true
 
 # Network
