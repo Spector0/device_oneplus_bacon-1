@@ -74,8 +74,10 @@ TARGET_SCREEN_WIDTH := 1080
 # Camera
 PRODUCT_PACKAGES += \
     android.hardware.camera.provider@2.4-impl \
-    camera.device@1.0-impl \
-    camera.msm8974
+    camera.device@3.2-impl \
+    camera.bacon \
+    libshim_camera \
+    libshim_cameraclient
 
 # Charger
 PRODUCT_PACKAGES += \
@@ -107,8 +109,7 @@ PRODUCT_PACKAGES += \
     gralloc.msm8974 \
     hwcomposer.msm8974 \
     memtrack.msm8974 \
-    liboverlay \
-    libboringssl-compat
+    liboverlay
 
 # GPS
 PRODUCT_PACKAGES += \

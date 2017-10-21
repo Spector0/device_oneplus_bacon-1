@@ -22,9 +22,9 @@ $(call inherit-product, device/oneplus/bacon/bacon.mk)
 #$(call inherit-product, vendor/gzosp/config/nfc_enhanced.mk)
 
 # Inherit some common Gzosp stuff.
-$(call inherit-product, vendor/gzosp/config/common_full_phone.mk)
+$(call inherit-product, vendor/slim/config/common_full_phone.mk)
 
-PRODUCT_NAME := gzosp_bacon
+PRODUCT_NAME := slim_bacon
 PRODUCT_DEVICE := bacon
 PRODUCT_MANUFACTURER := OnePlus
 PRODUCT_MODEL := A0001
