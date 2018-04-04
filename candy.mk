@@ -1,4 +1,5 @@
 # Copyright (C) 2016 The CyanogenMod Project
+# Copyright (C) 2018 CandyRoms
 #
 # Licensed under the Apache License, Version 2.0 (the "License");
 # you may not use this file except in compliance with the License.
@@ -22,13 +23,13 @@ $(call inherit-product, $(SRC_TARGET_DIR)/product/full_base_telephony.mk)
 # Inherit from bacon device
 $(call inherit-product, device/oneplus/bacon/bacon.mk)
 
-# Inherit Carbon GSM telephony parts
-$(call inherit-product, vendor/carbon/config/gsm.mk)
+# Inherit Candy GSM telephony parts
+$(call inherit-product, vendor/candy/config/gsm.mk)
 
 # Inherit some common CM stuff.
-$(call inherit-product, vendor/carbon/config/common.mk)
+$(call inherit-product, vendor/candy/config/common.mk)
 
-PRODUCT_NAME := carbon_bacon
+PRODUCT_NAME := candy_bacon
 PRODUCT_DEVICE := bacon
 PRODUCT_MANUFACTURER := OnePlus
 PRODUCT_MODEL := A0001
@@ -48,6 +49,3 @@ PRODUCT_BUILD_PROP_OVERRIDES += \
     PRIVATE_BUILD_DESC="bacon-user 6.0.1 MHC19Q ZNH2KAS1KN release-keys"
 endif
 
-# Maintainer
-PRODUCT_PROPERTY_OVERRIDES += \
-ro.carbon.maintainer="darjwx"
