@@ -3,3 +3,7 @@ allow hal_gnss_default location_data_file:file rw_file_perms;
 allow hal_gnss_default qmuxd_socket:dir rw_dir_perms;
 allow hal_gnss_default qmuxd_socket:sock_file create_file_perms;
 allow hal_gnss_default qmuxd:unix_stream_socket connectto;
+
+allow hal_gnss_default self:udp_socket create;
+allow hal_gnss_default system_data_file:fifo_file { open read setattr write };
+allow hal_gnss_default system_data_file:file { getattr open read setattr write };
