@@ -551,17 +551,17 @@ struct kgsl_cmd_syncpoint_fence {
 struct kgsl_cmd_syncpoint {
  int type;
 /* WARNING: DO NOT EDIT, AUTO-GENERATED CODE - SEE TOP FOR INSTRUCTIONS */
- void __user *priv;
+ void *priv;
  unsigned int size;
 };
 struct kgsl_submit_commands {
 /* WARNING: DO NOT EDIT, AUTO-GENERATED CODE - SEE TOP FOR INSTRUCTIONS */
  unsigned int context_id;
  unsigned int flags;
- struct kgsl_ibdesc __user *cmdlist;
+ struct kgsl_ibdesc *cmdlist;
  unsigned int numcmds;
 /* WARNING: DO NOT EDIT, AUTO-GENERATED CODE - SEE TOP FOR INSTRUCTIONS */
- struct kgsl_cmd_syncpoint __user *synclist;
+ struct kgsl_cmd_syncpoint *synclist;
  unsigned int numsyncs;
  unsigned int timestamp;
  unsigned int __pad[4];
@@ -572,7 +572,7 @@ struct kgsl_device_constraint {
  unsigned int type;
 /* WARNING: DO NOT EDIT, AUTO-GENERATED CODE - SEE TOP FOR INSTRUCTIONS */
  unsigned int context_id;
- void __user *data;
+ void *data;
  size_t size;
 };
 /* WARNING: DO NOT EDIT, AUTO-GENERATED CODE - SEE TOP FOR INSTRUCTIONS */

@@ -52,11 +52,13 @@ BOARD_KERNEL_SEPARATED_DT := true
 BOARD_MKBOOTIMG_ARGS := --ramdisk_offset 0x02000000 --tags_offset 0x01e00000
 BOARD_DTBTOOL_ARGS := -2
 TARGET_KERNEL_ARCH := arm
-TARGET_KERNEL_CONFIG := thunder_bacon_defconfig
+TARGET_KERNEL_CONFIG := lineageos_bacon_defconfig
 TARGET_KERNEL_SOURCE := kernel/oneplus/msm8974
-KERNEL_TOOLCHAIN := $(ANDROID_BUILD_TOP)/prebuilts/gcc/$(HOST_OS)-x86/arm/arm-eabi-7.x/bin
-TARGET_KERNEL_CROSS_COMPILE_PREFIX := arm-eabi-
+TARGET_KERNEL_CROSS_COMPILE_PREFIX := arm-linux-androideabi-
 PRODUCT_VENDOR_KERNEL_HEADERS :=  $(DEVICE_PATH)/kernel-headers
+
+# Remove ASAP
+BOARD_KERNEL_CMDLINE += androidboot.selinux=permissive
 
 # ANT+
 BOARD_ANT_WIRELESS_DEVICE := "vfs-prerelease"

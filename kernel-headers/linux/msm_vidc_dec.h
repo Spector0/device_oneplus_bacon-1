@@ -93,8 +93,8 @@
 /* WARNING: DO NOT EDIT, AUTO-GENERATED CODE - SEE TOP FOR INSTRUCTIONS */
 #define VDEC_IOCTL_MAGIC 'v'
 struct vdec_ioctl_msg {
- void __user *in;
- void __user *out;
+ void *in;
+ void *out;
 /* WARNING: DO NOT EDIT, AUTO-GENERATED CODE - SEE TOP FOR INSTRUCTIONS */
 };
 #define VDEC_IOCTL_GET_PROFILE_LEVEL_SUPPORTED   _IOWR(VDEC_IOCTL_MAGIC, 0, struct vdec_ioctl_msg)
@@ -178,7 +178,7 @@ struct vdec_allocatorproperty {
 /* WARNING: DO NOT EDIT, AUTO-GENERATED CODE - SEE TOP FOR INSTRUCTIONS */
 };
 struct vdec_bufferpayload {
- void __user *bufferaddr;
+ void *bufferaddr;
  size_t buffer_len;
 /* WARNING: DO NOT EDIT, AUTO-GENERATED CODE - SEE TOP FOR INSTRUCTIONS */
  int pmem_fd;
@@ -462,19 +462,19 @@ struct vdec_picsize {
 };
 /* WARNING: DO NOT EDIT, AUTO-GENERATED CODE - SEE TOP FOR INSTRUCTIONS */
 struct vdec_seqheader {
- void __user *ptr_seqheader;
+ void *ptr_seqheader;
  size_t seq_header_len;
  int pmem_fd;
 /* WARNING: DO NOT EDIT, AUTO-GENERATED CODE - SEE TOP FOR INSTRUCTIONS */
  size_t pmem_offset;
 };
 struct vdec_mberror {
- void __user *ptr_errormap;
+ void *ptr_errormap;
 /* WARNING: DO NOT EDIT, AUTO-GENERATED CODE - SEE TOP FOR INSTRUCTIONS */
  size_t err_mapsize;
 };
 struct vdec_input_frameinfo {
- void __user *bufferaddr;
+ void *bufferaddr;
 /* WARNING: DO NOT EDIT, AUTO-GENERATED CODE - SEE TOP FOR INSTRUCTIONS */
  size_t offset;
  size_t datalen;
@@ -484,7 +484,7 @@ struct vdec_input_frameinfo {
  void *client_data;
  int pmem_fd;
  size_t pmem_offset;
- void __user *desc_addr;
+ void *desc_addr;
 /* WARNING: DO NOT EDIT, AUTO-GENERATED CODE - SEE TOP FOR INSTRUCTIONS */
  uint32_t desc_size;
 };
@@ -503,12 +503,12 @@ struct vdec_aspectratioinfo {
 /* WARNING: DO NOT EDIT, AUTO-GENERATED CODE - SEE TOP FOR INSTRUCTIONS */
 };
 struct vdec_sep_metadatainfo {
- void __user *metabufaddr;
+ void *metabufaddr;
  uint32_t size;
 /* WARNING: DO NOT EDIT, AUTO-GENERATED CODE - SEE TOP FOR INSTRUCTIONS */
 };
 struct vdec_output_frameinfo {
- void __user *bufferaddr;
+ void *bufferaddr;
  size_t offset;
 /* WARNING: DO NOT EDIT, AUTO-GENERATED CODE - SEE TOP FOR INSTRUCTIONS */
  size_t len;
