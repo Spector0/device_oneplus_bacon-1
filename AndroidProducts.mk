@@ -1,2 +1,2 @@
 PRODUCT_MAKEFILES := \
-    $(LOCAL_DIR)/candy.mk
+    $(LOCAL_DIR)/nitrogen_bacon.mk
